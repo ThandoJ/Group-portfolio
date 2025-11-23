@@ -1,0 +1,144 @@
+/* ---------- GLOBAL RESET ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #fafafa;
+    color: #222;
+    line-height: 1.6;
+    padding: 10px; /* adds breathing room on mobile */
+}
+
+a {
+    color: #ffbd2f;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- HEADER & FOOTER ---------- */
+header, footer {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.logo {
+    font-weight: bold;
+    color: #ffbd2f;
+}
+
+/* ---------- NAVIGATION ---------- */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffbd2f;
+    margin: 6px 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+/* ---------- TEAM CARDS ---------- */
+.team-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 260px;
+    text-align: center;
+    border: 1px solid #eee;
+    transition: transform .2s ease-in-out, box-shadow .2s ease-in;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+.card img {
+    width: 100%;
+    max-height: 240px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* ---------- BUTTON ---------- */
+.btn {
+    display: inline-block;
+    background: #ffbd2f;
+    padding: 10px 18px;
+    margin-top: 12px;
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background .2s ease-in-out;
+}
+
+.btn:hover {
+    background: #e6a726;
+}
+
+/* ---------- MEMBER PROFILE PAGES ---------- */
+.profile {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.profile img {
+    width: 240px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* lists inside profiles */
+ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+/* ---------- MOBILE RESPONSIVE ---------- */
+@media (max-width: 768px) {
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    nav a {
+        margin: 4px 8px;
+    }
+}
